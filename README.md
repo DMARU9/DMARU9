@@ -140,11 +140,17 @@ mindmap
 
 ---
 
-## 🏆 Achievements & Trophies
+## 🏆 GitHub Achievements
 
 <div align="center">
 
-[![Trophy](https://github-profile-trophy.vercel.app/?username=DMARU9&theme=radical&no-frame=true&no-bg=true&margin-w=4)](https://github.com/DMARU9)
+![](https://img.shields.io/badge/🔰_Joined-2023--06-00C9FF?style=for-the-badge)
+![](https://img.shields.io/badge/📂_Public_Repos-1-92FE9D?style=for-the-badge)
+![](https://img.shields.io/badge/⚡_Status-Active-00C9FF?style=for-the-badge)
+
+[![Achievements](https://github-readme-stats.vercel.app/api?username=DMARU9&show_icons=true&count_private=true&theme=transparent&hide_border=true&title_color=00C9FF&icon_color=92FE9D&text_color=c9d1d9&bg_color=0D1117)](https://github.com/DMARU9)
+
+> 💡 _The trophy service (`github-profile-trophy`) is currently unavailable due to a deployment issue. Above stats are shown as an alternative._
 
 </div>
 
@@ -170,39 +176,25 @@ _Recent activity will appear here automatically via GitHub Actions._
 
 ## 🚀 Featured Projects
 
-> 🔧 _Add your pinned projects here by replacing `DMARU9` and `repo-name` with actual values:_
+> 🏗️ _Projects coming soon! Stay tuned for some exciting work in backend APIs, mobile apps, and more._
 
 <div align="center">
-  <a href="https://github.com/DMARU9?tab=repositories">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=DMARU9&repo=DMARU9&theme=transparent&title_color=00C9FF&icon_color=92FE9D&text_color=c9d1d9&bg_color=0D1117&hide_border=true" />
-  </a>
+
+| | | |
+|:-:|:-:|:-:|
+| **Coming Soon** | **Coming Soon** | **Coming Soon** |
+| ✨ | ✨ | ✨ |
+
 </div>
 
 ---
 
 ## 🎯 Current Focus
 
-```go
-package main
-
-import "fmt"
-
-type Focus struct {
-    Learning  string
-    Building  string
-    Exploring string
-}
-
-func main() {
-    now := Focus{
-        Learning:  "Go backend development with Gin framework",
-        Building:  "Scalable APIs with FastAPI + PostgreSQL",
-        Exploring: "System Design & Clean Architecture",
-    }
-    fmt.Printf("🎯 Current: %s\n", now.Building)
-    fmt.Printf("📚 Learning: %s\n", now.Learning)
-    fmt.Printf("🔭 Exploring: %s\n", now.Exploring)
-}
+```text
+🎯 Current:  Scalable APIs with FastAPI + PostgreSQL
+📚 Learning: Go backend development with Gin framework
+🔭 Exploring: System Design & Clean Architecture
 ```
 
 ---
@@ -212,7 +204,6 @@ func main() {
 <div align="center">
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DMARU9)
-[![Qiita](https://img.shields.io/badge/Qiita-55C500?style=for-the-badge&logo=qiita&logoColor=white)](https://qiita.com/)
 
 </div>
 

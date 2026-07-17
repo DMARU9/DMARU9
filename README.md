@@ -169,7 +169,7 @@ No activity data yet. Start coding to fill this section! 🚀
 ## ⚡ Recent GitHub Activity
 
 <!--START_SECTION:activity-->
-_Recent activity will appear here automatically via GitHub Actions._
+1. 🎉 Merged PR [#1](https://github.com/DMARU9/DMARU9/pull/1) in [DMARU9/DMARU9](https://github.com/DMARU9/DMARU9)
 <!--END_SECTION:activity-->
 
 ---

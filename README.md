@@ -169,7 +169,7 @@ No activity data yet. Start coding to fill this section! 🚀
 ## ⚡ Recent GitHub Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#6](https://github.com/DMARU9/OBSIDIAN-KNOWLEDGE-COMPILER/pull/6) in [DMARU9/OBSIDIAN-KNOWLEDGE-COMPILER](https://github.com/DMARU9/OBSIDIAN-KNOWLEDGE-COMPILER)
+1. 🎉 Merged PR [#1](https://github.com/DMARU9/DEV-LOG-DAILY/pull/1) in [DMARU9/DEV-LOG-DAILY](https://github.com/DMARU9/DEV-LOG-DAILY)
 <!--END_SECTION:activity-->
 
 ---

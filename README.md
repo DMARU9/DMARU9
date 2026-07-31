@@ -173,7 +173,7 @@ No activity data yet. Start coding to fill this section! 🚀
 
 <!--START_SECTION:activity-->
 
-1. 🎉 Merged PR [#2](https://github.com/DMARU9/DEV-LOG-DAILY/pull/2) in [DMARU9/DEV-LOG-DAILY](https://github.com/DMARU9/DEV-LOG-DAILY)
+1. 🎉 Merged PR [#2](https://github.com/DMARU9/DMARU9/pull/2) in [DMARU9/DMARU9](https://github.com/DMARU9/DMARU9)
 <!--END_SECTION:activity-->
 
 ---

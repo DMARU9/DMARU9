@@ -62,7 +62,7 @@ spec:
   status:
     learning: Go, System Design, Clean Architecture
     building: Next-gen API platform with FastAPI + PostgreSQL
-    goal: "Ship quality code that makes a difference 🚀"
+    goal: 'Ship quality code that makes a difference 🚀'
 ```
 
 ---
@@ -120,8 +120,8 @@ mindmap
 
 <div align="center">
 
-| Stats | Top Languages | Streak |
-|:-----:|:-------------:|:------:|
+|                                                                                                       Stats                                                                                                       |                                                                                       Top Languages                                                                                        |                                                                                   Streak                                                                                   |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | ![Stats](https://github-readme-stats.vercel.app/api?username=DMARU9&show_icons=true&count_private=true&theme=transparent&hide_border=true&title_color=00C9FF&icon_color=92FE9D&text_color=c9d1d9&bg_color=0D1117) | ![Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=DMARU9&layout=compact&theme=transparent&hide_border=true&title_color=00C9FF&text_color=c9d1d9&bg_color=0D1117) | ![Streak](https://github-readme-streak-stats.herokuapp.com/?user=DMARU9&theme=transparent&hide_border=true&ring=00C9FF&fire=92FE9D&currStreakLabel=00C9FF&bg_color=0D1117) |
 
 </div>
@@ -132,8 +132,8 @@ mindmap
 
 ![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=DMARU9&theme=github_dark)
 
-| | | |
-|:--:|:--:|:--:|
+|                                                                                                                     |                                                                                                                       |                                                                                                                              |
+| :-----------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------: |
 | ![](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=DMARU9&theme=github_dark) | ![](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=DMARU9&theme=github_dark) | ![](https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=DMARU9&theme=github_dark&utcOffset=9) |
 
 </div>
@@ -150,7 +150,8 @@ mindmap
 
 [![Achievements](https://github-readme-stats.vercel.app/api?username=DMARU9&show_icons=true&count_private=true&theme=transparent&hide_border=true&title_color=00C9FF&icon_color=92FE9D&text_color=c9d1d9&bg_color=0D1117)](https://github.com/DMARU9)
 
-> 💡 _The trophy service (`github-profile-trophy`) is currently unavailable due to a deployment issue. Above stats are shown as an alternative._
+> 💡 _The trophy service (`github-profile-trophy`) is currently unavailable due to a deployment
+> issue. Above stats are shown as an alternative._
 
 </div>
 
@@ -159,9 +160,11 @@ mindmap
 ## 🌱 Weekly Development Breakdown
 
 <!--START_SECTION:waka-->
+
 ```text
 No activity data yet. Start coding to fill this section! 🚀
 ```
+
 <!--END_SECTION:waka-->
 
 ---
@@ -169,6 +172,7 @@ No activity data yet. Start coding to fill this section! 🚀
 ## ⚡ Recent GitHub Activity
 
 <!--START_SECTION:activity-->
+
 1. 🎉 Merged PR [#2](https://github.com/DMARU9/DEV-LOG-DAILY/pull/2) in [DMARU9/DEV-LOG-DAILY](https://github.com/DMARU9/DEV-LOG-DAILY)
 <!--END_SECTION:activity-->
 
@@ -176,14 +180,15 @@ No activity data yet. Start coding to fill this section! 🚀
 
 ## 🚀 Featured Projects
 
-> 🏗️ _Projects coming soon! Stay tuned for some exciting work in backend APIs, mobile apps, and more._
+> 🏗️ _Projects coming soon! Stay tuned for some exciting work in backend APIs, mobile apps, and
+> more._
 
 <div align="center">
 
-| | | |
-|:-:|:-:|:-:|
+|                 |                 |                 |
+| :-------------: | :-------------: | :-------------: |
 | **Coming Soon** | **Coming Soon** | **Coming Soon** |
-| ✨ | ✨ | ✨ |
+|       ✨        |       ✨        |       ✨        |
 
 </div>
 

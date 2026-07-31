@@ -1,0 +1,65 @@
+name: Update GitHub Achievements
+
+on:
+  schedule:
+    # 24時間ごとに実行
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-achievements:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    concurrency:
+      group: update-achievements
+      cancel-in-progress: true
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch achievements and update README
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # GraphQL API で Achievements を取得
+          ACHIEVEMENTS=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+            -H "Content-Type: application/json" \
+            -d '{"query": "{ user(login: \"DMARU9\") { achievements { nodes { name description } } } }"}' \
+            https://api.github.com/graphql)
+
+          # Achievements を shields.io バッジに変換
+          BADGES=$(echo "$ACHIEVEMENTS" | jq -r '
+            .data.user.achievements.nodes[] |
+            "[![\( .name )](https://img.shields.io/badge/\( .name | gsub(" "; "_") )-\( .description | gsub(" "; "_") )-00C9FF?style=for-the-badge)]"
+          ' 2>/dev/null | tr '\n' ' ')
+
+          # フォールバック メッセージ
+          if [ -z "$BADGES" ] || [ "$BADGES" = " " ]; then
+            CONTENT="> ℹ️ No achievements data available."
+          else
+            CONTENT="<div align=\"center\">\n\n$BADGES\n\n</div>"
+          fi
+
+          # README.md を更新
+          sed -i "/<!--START_SECTION:achievements-->/,/<!--END_SECTION:achievements-->/{
+            /<!--START_SECTION:achievements-->/!{
+              /<!--END_SECTION:achievements-->/!d
+            }
+            /<!--START_SECTION:achievements-->/a\\
+          $CONTENT
+          }" README.md
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "🏆 Update GitHub achievements"
+            git push
+          fi

@@ -142,6 +142,7 @@ mindmap
 
 ## 🏆 GitHub Achievements
 
+<!--START_SECTION:achievements-->
 <div align="center">
 
 ![](https://img.shields.io/badge/🔰_Joined-2023--06-00C9FF?style=for-the-badge)
@@ -154,6 +155,7 @@ mindmap
 > issue. Above stats are shown as an alternative._
 
 </div>
+<!--END_SECTION:achievements-->
 
 ---
 
@@ -180,10 +182,11 @@ No activity data yet. Start coding to fill this section! 🚀
 
 ## 🚀 Featured Projects
 
+<!--START_SECTION:featured_projects-->
+<div align="center">
+
 > 🏗️ _Projects coming soon! Stay tuned for some exciting work in backend APIs, mobile apps, and
 > more._
-
-<div align="center">
 
 |                 |                 |                 |
 | :-------------: | :-------------: | :-------------: |
@@ -191,6 +194,7 @@ No activity data yet. Start coding to fill this section! 🚀
 |       ✨        |       ✨        |       ✨        |
 
 </div>
+<!--END_SECTION:featured_projects-->
 
 ---
 

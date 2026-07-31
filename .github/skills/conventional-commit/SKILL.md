@@ -1,12 +1,15 @@
 ---
 name: conventional-commit
-description: 'Conventional Commits 1.0.0 に準拠したコミットを作成します。コミットメッセージの作成、変更内容の確認、コミット実行までを支援します。Use when: committing changes, preparing commit messages, running git commit.'
+description: 'Conventional Commits 1.0.0
+  に準拠したコミットを作成します。コミットメッセージの作成、変更内容の確認、コミット実行までを支援します。Use
+  when: committing changes, preparing commit messages, running git commit.'
 argument-hint: 'コミットメッセージや指示があれば入力'
 ---
 
 # Conventional Commit
 
-[Conventional Commits 1.0.0](https://www.conventionalcommits.org/ja/v1.0.0/) に準拠したコミットを作成します。
+[Conventional Commits 1.0.0](https://www.conventionalcommits.org/ja/v1.0.0/) に準拠したコミットを作
+成します。
 
 ## コミットメッセージの基本構造
 
@@ -20,19 +23,19 @@ argument-hint: 'コミットメッセージや指示があれば入力'
 
 ## Type の選び方
 
-| Type       | 用途                       | 例                                   |
-| ---------- | -------------------------- | ------------------------------------ |
-| `feat`     | 新機能の追加               | `feat: ログイン機能を追加`           |
-| `fix`      | バグ修正                   | `fix: ログアウト時のエラーを修正`    |
-| `docs`     | ドキュメントの変更のみ     | `docs: READMEのセットアップ手順を更新` |
-| `style`    | コードの意味に影響しない変更 | `style: インデントを修正`          |
-| `refactor` | リファクタリング           | `refactor: ユーザー取得処理を関数化` |
-| `perf`     | パフォーマンス改善         | `perf: データベースクエリを最適化`  |
-| `test`     | テストの追加・修正         | `test: ログイン機能のテストを追加`  |
-| `build`    | ビルドシステムや依存関係の変更 | `build: TypeScriptのバージョンを更新` |
-| `ci`       | CI 設定の変更              | `ci: GitHub Actionsのワークフローを修正` |
-| `chore`    | その他の変更               | `chore: 未使用のファイルを削除`     |
-| `revert`   | コミットの取り消し         | `revert: "feat: ..." を取り消し`     |
+| Type       | 用途                           | 例                                       |
+| ---------- | ------------------------------ | ---------------------------------------- |
+| `feat`     | 新機能の追加                   | `feat: ログイン機能を追加`               |
+| `fix`      | バグ修正                       | `fix: ログアウト時のエラーを修正`        |
+| `docs`     | ドキュメントの変更のみ         | `docs: READMEのセットアップ手順を更新`   |
+| `style`    | コードの意味に影響しない変更   | `style: インデントを修正`                |
+| `refactor` | リファクタリング               | `refactor: ユーザー取得処理を関数化`     |
+| `perf`     | パフォーマンス改善             | `perf: データベースクエリを最適化`       |
+| `test`     | テストの追加・修正             | `test: ログイン機能のテストを追加`       |
+| `build`    | ビルドシステムや依存関係の変更 | `build: TypeScriptのバージョンを更新`    |
+| `ci`       | CI 設定の変更                  | `ci: GitHub Actionsのワークフローを修正` |
+| `chore`    | その他の変更                   | `chore: 未使用のファイルを削除`          |
+| `revert`   | コミットの取り消し             | `revert: "feat: ..." を取り消し`         |
 
 ## Scope (任意)
 
@@ -115,11 +118,11 @@ Issue/PR: #123
 
 **ブランチ名のパターン例**:
 
-| ブランチ名 | 抽出される参照 |
-|---|---|
-| `feature/123-add-login` | `#123` |
-| `fix/456-error-handling` | `#456` |
-| `feature/ABC-789-update-api` | `ABC-789` |
+| ブランチ名                   | 抽出される参照 |
+| ---------------------------- | -------------- |
+| `feature/123-add-login`      | `#123`         |
+| `fix/456-error-handling`     | `#456`         |
+| `feature/ABC-789-update-api` | `ABC-789`      |
 
 抽出後、コミットのフッターに追記します。
 

@@ -1,0 +1,7 @@
+{
+  "retryOn429": true,
+  "retryCount": 5,
+  "fallbackRetryDelay": "30s",
+  "aliveStatusCodes": [200, 206, 301, 302, 403],
+  "ignorePatterns": ["localhost", "127.0.0.1", "github.com/DMARU9"]
+}

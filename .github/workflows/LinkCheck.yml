@@ -1,0 +1,29 @@
+name: Link Check
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+  schedule:
+    - cron: '0 12 * * 1' # 毎週月曜日の12時
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check links in markdown files
+        uses: lychee/lychee-action@v1
+        with:
+          args:
+            "--verbose --no-progress --exclude-mail --exclude-path=.github/workflows/**/*.yml
+            '**/*.md'"
+          fail: true

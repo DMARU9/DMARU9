@@ -3,7 +3,7 @@ name: Generate Contribution Snake
 on:
   schedule:
     # 毎日0時と12時に自動実行（GitHubの利用制限に注意）
-    - cron: "0 0,12 * * *"
+    - cron: '0 0,12 * * *'
 
   # 手動実行を許可
   workflow_dispatch:

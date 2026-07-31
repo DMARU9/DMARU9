@@ -171,13 +171,7 @@ No activity data yet. Start coding to fill this section! 🚀
 <!--START_SECTION:featured_projects-->
 <div align="center">
 
-> 🏗️ _Projects coming soon! Stay tuned for some exciting work in backend APIs, mobile apps, and
-> more._
-
-|                 |                 |                 |
-| :-------------: | :-------------: | :-------------: |
-| **Coming Soon** | **Coming Soon** | **Coming Soon** |
-|       ✨        |       ✨        |       ✨        |
+> 🏗️ No public projects yet. Stay tuned!
 
 </div>
 <!--END_SECTION:featured_projects-->

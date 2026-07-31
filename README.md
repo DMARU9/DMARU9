@@ -33,14 +33,7 @@
 ## 🧑‍💻 About Me
 
 ```yaml
-api_version: v1
-kind: Profile
-metadata:
-  name: DMARU9
-  namespace: github.com
-  labels:
-    tech: [python, dart, go, typescript]
-    focus: [backend, mobile, api]
+name: DMARU9
 spec:
   location: Japan 🇯🇵
   stacks:

@@ -18,9 +18,9 @@
 
 **Purpose**: プロジェクトの検証ツールをセットアップし、動的セクションのマーカーを追加
 
-- [ ] T001 [P] Create `.markdownlint.json` at repository root to configure markdownlint rules (disable line length rule MD013, allow inline HTML MD033) per plan.md constraints
-- [ ] T002 [P] Add `<!--START_SECTION:achievements-->` and `<!--END_SECTION:achievements-->` section markers to `README.md` in the GitHub Achievements section, with fallback message `> ℹ️ No achievements data available.`
-- [ ] T003 [P] Add `<!--START_SECTION:featured_projects-->` and `<!--END_SECTION:featured_projects-->` section markers to `README.md` in the Featured Projects section, replacing the current "Coming Soon" placeholder with fallback message `> 🏗️ No public projects yet. Stay tuned!`
+- [x] T001 [P] Create `.markdownlint.json` at repository root to configure markdownlint rules (disable line length rule MD013, allow inline HTML MD033) per plan.md constraints
+- [x] T002 [P] Add `<!--START_SECTION:achievements-->` and `<!--END_SECTION:achievements-->` section markers to `README.md` in the GitHub Achievements section, with fallback message `> ℹ️ No achievements data available.`
+- [x] T003 [P] Add `<!--START_SECTION:featured_projects-->` and `<!--END_SECTION:featured_projects-->` section markers to `README.md` in the Featured Projects section, replacing the current "Coming Soon" placeholder with fallback message `> 🏗️ No public projects yet. Stay tuned!`
 
 ---
 
@@ -32,7 +32,7 @@
 
 ### Implementation for User Story 1
 
-- [ ] T004 [US1] Remove unnecessary metadata fields (`api_version`, `kind`, `namespace`, `labels`) from the About Me YAML code block in `README.md`, keeping only `name` and `spec` (containing `location`, `stacks`, `status`)
+- [x] T004 [US1] Remove unnecessary metadata fields (`api_version`, `kind`, `namespace`, `labels`) from the About Me YAML code block in `README.md`, keeping only `name` and `spec` (containing `location`, `stacks`, `status`)
 
 **Checkpoint**: At this point, User Story 1 should be fully functional — About Me section is clean and copy-friendly
 
@@ -46,7 +46,7 @@
 
 ### Implementation for User Story 2
 
-- [ ] T005 [US2] Verify and fix the stars badge in `README.md` GitHub Analytics section. Current badge uses `https://img.shields.io/github/stars/DMARU9?style=for-the-badge&logo=github&label=STARS&color=ff69b4` — confirm this shields.io endpoint displays "0" correctly (shields.io returns a badge even for 0 stars). If it does not, switch to a static badge: `https://img.shields.io/badge/⭐_Stars-0-ff69b4?style=for-the-badge&logo=github`
+- [x] T005 [US2] Verify and fix the stars badge in `README.md` GitHub Analytics section. Current badge uses `https://img.shields.io/github/stars/DMARU9?style=for-the-badge&logo=github&label=STARS&color=ff69b4` — confirm this shields.io endpoint displays "0" correctly (shields.io returns a badge even for 0 stars). If it does not, switch to a static badge: `https://img.shields.io/badge/⭐_Stars-0-ff69b4?style=for-the-badge&logo=github`
 
 **Checkpoint**: At this point, User Story 2 should be functional — stars badge displays accurately including 0
 
@@ -60,7 +60,7 @@
 
 ### Implementation for User Story 3
 
-- [ ] T006 [US3] Fix the Top Languages badge in `README.md` GitHub Analytics section. Current URL uses `github-readme-stats.vercel.app/api/top-langs/`. Troubleshooting steps: (1) Verify the URL loads correctly by opening it directly in a browser, (2) Add `hide=&show=` parameters to control which languages are displayed, (3) Ensure `layout=compact` and theme/color params match the existing color scheme, (4) If the API is consistently broken, consider alternative: `github-readme-stats.vercel.app/api/top-langs?username=DMARU9&layout=compact&hide_border=true&title_color=00C9FF&text_color=c9d1d9&bg_color=0D1117&theme=transparent`. Add a fallback message for when no language data is available
+- [x] T006 [US3] Fix the Top Languages badge in `README.md` GitHub Analytics section. Current URL uses `github-readme-stats.vercel.app/api/top-langs/`. Troubleshooting steps: (1) Verify the URL loads correctly by opening it directly in a browser, (2) Add `hide=&show=` parameters to control which languages are displayed, (3) Ensure `layout=compact` and theme/color params match the existing color scheme, (4) If the API is consistently broken, consider alternative: `github-readme-stats.vercel.app/api/top-langs?username=DMARU9&layout=compact&hide_border=true&title_color=00C9FF&text_color=c9d1d9&bg_color=0D1117&theme=transparent`. Add a fallback message for when no language data is available
 
 **Checkpoint**: At this point, User Story 3 should be functional — Top Languages displays correctly
 
@@ -74,8 +74,8 @@
 
 ### Implementation for User Story 4
 
-- [ ] T007 [US4] Create `.github/workflows/UpdateAchievements.yml` — new GitHub Actions workflow that: (1) triggers on schedule (every 24 hours) and manual dispatch, (2) uses `GITHUB_TOKEN` for GraphQL API authentication, (3) calls GitHub GraphQL API to fetch `user.achievements` for login `DMARU9`, (4) transforms achievement nodes into shields.io badge URLs using the pattern `https://img.shields.io/badge/{name}-{description}-00C9FF?style=for-the-badge`, (5) updates README.md between `<!--START_SECTION:achievements-->` and `<!--END_SECTION:achievements-->` markers, (6) includes fallback message `> ℹ️ No achievements data available.` when no achievements found, (7) commits and pushes changes with `concurrency` group to prevent parallel runs, (8) requires `contents: write` permission
-- [ ] T008 [US4] Update the Achievements section in `README.md` to replace the current manual shields.io badges (`🔰_Joined`, `📂_Public_Repos`, `⚡_Status`) and the github-profile-trophy fallback note with the dynamic section markers and a clean fallback state
+- [x] T007 [US4] Create `.github/workflows/UpdateAchievements.yml` — new GitHub Actions workflow that: (1) triggers on schedule (every 24 hours) and manual dispatch, (2) uses `GITHUB_TOKEN` for GraphQL API authentication, (3) calls GitHub GraphQL API to fetch `user.achievements` for login `DMARU9`, (4) transforms achievement nodes into shields.io badge URLs using the pattern `https://img.shields.io/badge/{name}-{description}-00C9FF?style=for-the-badge`, (5) updates README.md between `<!--START_SECTION:achievements-->` and `<!--END_SECTION:achievements-->` markers, (6) includes fallback message `> ℹ️ No achievements data available.` when no achievements found, (7) commits and pushes changes with `concurrency` group to prevent parallel runs, (8) requires `contents: write` permission
+- [x] T008 [US4] Update the Achievements section in `README.md` to replace the current manual shields.io badges (`🔰_Joined`, `📂_Public_Repos`, `⚡_Status`) and the github-profile-trophy fallback note with the dynamic section markers and a clean fallback state
 
 **Checkpoint**: At this point, User Story 4 should be functional — Achievements display actual data via GraphQL API
 
@@ -89,8 +89,8 @@
 
 ### Implementation for User Story 5
 
-- [ ] T009 [US5] Create `.github/workflows/UpdateFeaturedProjects.yml` — new GitHub Actions workflow that: (1) triggers on schedule (every 6 hours) and manual dispatch, (2) calls GitHub REST API `GET /users/DMARU9/repos` to fetch public repos, (3) filters out forks and archived repos, (4) sorts by `stargazers_count` descending, then by `pushed_at` descending for ties, (5) selects top 6 repos, (6) generates shields.io badges per repo using pattern `https://img.shields.io/badge/{name}-{description}-{color}?style=for-the-badge&link={url}` with colors cycling through `#00C9FF`, `#92FE9D`, `#ff69b4`, (7) generates star count labels below each badge, (8) updates README.md between `<!--START_SECTION:featured_projects-->` and `<!--END_SECTION:featured_projects-->` markers with a table layout, (9) includes fallback message `> 🏗️ No public projects yet. Stay tuned!` when no repos found, (10) commits and pushes changes with `concurrency` group, (11) requires `contents: write` permission
-- [ ] T010 [US5] Update the Featured Projects section in `README.md` to replace the current "Coming Soon" placeholder content with the dynamic section markers and a clean fallback state
+- [x] T009 [US5] Create `.github/workflows/UpdateFeaturedProjects.yml` — new GitHub Actions workflow that: (1) triggers on schedule (every 6 hours) and manual dispatch, (2) calls GitHub REST API `GET /users/DMARU9/repos` to fetch public repos, (3) filters out forks and archived repos, (4) sorts by `stargazers_count` descending, then by `pushed_at` descending for ties, (5) selects top 6 repos, (6) generates shields.io badges per repo using pattern `https://img.shields.io/badge/{name}-{description}-{color}?style=for-the-badge&link={url}` with colors cycling through `#00C9FF`, `#92FE9D`, `#ff69b4`, (7) generates star count labels below each badge, (8) updates README.md between `<!--START_SECTION:featured_projects-->` and `<!--END_SECTION:featured_projects-->` markers with a table layout, (9) includes fallback message `> 🏗️ No public projects yet. Stay tuned!` when no repos found, (10) commits and pushes changes with `concurrency` group, (11) requires `contents: write` permission
+- [x] T010 [US5] Update the Featured Projects section in `README.md` to replace the current "Coming Soon" placeholder content with the dynamic section markers and a clean fallback state
 
 **Checkpoint**: At this point, User Story 5 should be functional — Featured Projects auto-updates with repos sorted by stars
 
@@ -100,10 +100,10 @@
 
 **Purpose**: 全体の品質担保と仕様書の検証
 
-- [ ] T011 Run markdownlint on `README.md` to verify all markdown changes are valid. Fix any linting errors
-- [ ] T012 Run link check (lychee or equivalent) on `README.md` to verify all badge URLs and links are valid
-- [ ] T013 Verify all README.md section markers are correctly placed and matched (`<!--START_SECTION:...-->` / `<!--END_SECTION:...-->`)
-- [ ] T014 Run quickstart.md validation scenarios to confirm all 6 test scenarios pass
+- [x] T011 Run markdownlint on `README.md` to verify all markdown changes are valid. Fix any linting errors
+- [x] T012 Run link check (lychee or equivalent) on `README.md` to verify all badge URLs and links are valid
+- [x] T013 Verify all README.md section markers are correctly placed and matched (`<!--START_SECTION:...-->` / `<!--END_SECTION:...-->`)
+- [x] T014 Run quickstart.md validation scenarios to confirm all 6 test scenarios pass
 
 ---
 

@@ -23,5 +23,7 @@ jobs:
       - name: Check links in markdown files
         uses: lycheeverse/lychee-action@v2
         with:
-          args: "--verbose --no-progress --exclude-path=.github/workflows/**/*.yml '**/*.md'"
+          args: >-
+            --verbose --no-progress --exclude-path=.github/workflows/**/*.yml
+            --exclude="status.shields.io" '**/*.md'
           fail: true

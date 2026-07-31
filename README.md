@@ -33,14 +33,7 @@
 ## 🧑‍💻 About Me
 
 ```yaml
-api_version: v1
-kind: Profile
-metadata:
-  name: DMARU9
-  namespace: github.com
-  labels:
-    tech: [python, dart, go, typescript]
-    focus: [backend, mobile, api]
+name: DMARU9
 spec:
   location: Japan 🇯🇵
   stacks:
@@ -120,9 +113,9 @@ mindmap
 
 <div align="center">
 
-|                                                                                                       Stats                                                                                                       |                                                                                       Top Languages                                                                                        |                                                                                   Streak                                                                                   |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| ![Stats](https://github-readme-stats.vercel.app/api?username=DMARU9&show_icons=true&count_private=true&theme=transparent&hide_border=true&title_color=00C9FF&icon_color=92FE9D&text_color=c9d1d9&bg_color=0D1117) | ![Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=DMARU9&layout=compact&theme=transparent&hide_border=true&title_color=00C9FF&text_color=c9d1d9&bg_color=0D1117) | ![Streak](https://github-readme-streak-stats.herokuapp.com/?user=DMARU9&theme=transparent&hide_border=true&ring=00C9FF&fire=92FE9D&currStreakLabel=00C9FF&bg_color=0D1117) |
+|                                                                                                       Stats                                                                                                       |                                                                                       Top Languages                                                                                       |                                                                                   Streak                                                                                   |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| ![Stats](https://github-readme-stats.vercel.app/api?username=DMARU9&show_icons=true&count_private=true&theme=transparent&hide_border=true&title_color=00C9FF&icon_color=92FE9D&text_color=c9d1d9&bg_color=0D1117) | ![Languages](https://github-readme-stats.vercel.app/api/top-langs?username=DMARU9&layout=compact&theme=transparent&hide_border=true&title_color=00C9FF&text_color=c9d1d9&bg_color=0D1117) | ![Streak](https://github-readme-streak-stats.herokuapp.com/?user=DMARU9&theme=transparent&hide_border=true&ring=00C9FF&fire=92FE9D&currStreakLabel=00C9FF&bg_color=0D1117) |
 
 </div>
 
@@ -142,18 +135,13 @@ mindmap
 
 ## 🏆 GitHub Achievements
 
+<!--START_SECTION:achievements-->
 <div align="center">
 
-![](https://img.shields.io/badge/🔰_Joined-2023--06-00C9FF?style=for-the-badge)
-![](https://img.shields.io/badge/📂_Public_Repos-1-92FE9D?style=for-the-badge)
-![](https://img.shields.io/badge/⚡_Status-Active-00C9FF?style=for-the-badge)
-
-[![Achievements](https://github-readme-stats.vercel.app/api?username=DMARU9&show_icons=true&count_private=true&theme=transparent&hide_border=true&title_color=00C9FF&icon_color=92FE9D&text_color=c9d1d9&bg_color=0D1117)](https://github.com/DMARU9)
-
-> 💡 _The trophy service (`github-profile-trophy`) is currently unavailable due to a deployment
-> issue. Above stats are shown as an alternative._
+> ℹ️ No achievements data available.
 
 </div>
+<!--END_SECTION:achievements-->
 
 ---
 
@@ -180,17 +168,13 @@ No activity data yet. Start coding to fill this section! 🚀
 
 ## 🚀 Featured Projects
 
-> 🏗️ _Projects coming soon! Stay tuned for some exciting work in backend APIs, mobile apps, and
-> more._
-
+<!--START_SECTION:featured_projects-->
 <div align="center">
 
-|                 |                 |                 |
-| :-------------: | :-------------: | :-------------: |
-| **Coming Soon** | **Coming Soon** | **Coming Soon** |
-|       ✨        |       ✨        |       ✨        |
+> 🏗️ No public projects yet. Stay tuned!
 
 </div>
+<!--END_SECTION:featured_projects-->
 
 ---
 

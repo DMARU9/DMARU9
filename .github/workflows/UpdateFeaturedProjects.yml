@@ -1,0 +1,134 @@
+name: Update Featured Projects
+
+on:
+  schedule:
+    # 6時間ごとに実行
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-featured-projects:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    concurrency:
+      group: update-featured-projects
+      cancel-in-progress: true
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch repos and update README
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # GitHub REST API で公開リポジトリを取得
+          REPOS=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+            "https://api.github.com/users/DMARU9/repos?per_page=100&type=public")
+
+          # fork と archived を除外し、stars 順（同数なら更新日順）でソート
+          TOP_REPOS=$(echo "$REPOS" | jq -r '
+            [.[] | select(.fork == false and .archived == false)] |
+            sort_by(-.stargazers_count, -.pushed_at) |
+            .[0:6]
+          ')
+
+          # リポジトリ数を確認
+          REPO_COUNT=$(echo "$TOP_REPOS" | jq 'length')
+
+          if [ "$REPO_COUNT" = "0" ]; then
+            CONTENT="> 🏗️ No public projects yet. Stay tuned!"
+          else
+            # カラーサイクル
+            COLORS=("#00C9FF" "#92FE9D" "#ff69b4")
+
+            # バッジ行とスターバッジ行を生成
+            BADGE_ROW1=""
+            STAR_ROW1=""
+            BADGE_ROW2=""
+            STAR_ROW2=""
+
+            for i in $(seq 0 $((REPO_COUNT - 1))); do
+              NAME=$(echo "$TOP_REPOS" | jq -r ".[$i].name")
+              DESC=$(echo "$TOP_REPOS" | jq -r ".[$i].description // \"No description\"")
+              URL=$(echo "$TOP_REPOS" | jq -r ".[$i].html_url")
+              STARS=$(echo "$TOP_REPOS" | jq -r ".[$i].stargazers_count")
+              COLOR_IDX=$((i % 3))
+              COLOR=${COLORS[$COLOR_IDX]}
+
+              # 説明文を切り詰め
+              SHORT_DESC=$(echo "$DESC" | cut -c1-30)
+              # URL エンコード
+              ENCODED_NAME=$(echo "$NAME" | sed 's/ /_/g')
+              ENCODED_DESC=$(echo "$SHORT_DESC" | sed 's/ /_/g; s/#/%23/g')
+
+              BADGE="[![${NAME}](https://img.shields.io/badge/${ENCODED_NAME}-${ENCODED_DESC}-${COLOR}?style=for-the-badge&link=${URL})]"
+              STAR="⭐ ${STARS}"
+
+              if [ $i -lt 3 ]; then
+                BADGE_ROW1="${BADGE_ROW1} ${BADGE} |"
+                STAR_ROW1="${STAR_ROW1} ${STAR} |"
+              else
+                BADGE_ROW2="${BADGE_ROW2} ${BADGE} |"
+                STAR_ROW2="${STAR_ROW2} ${STAR} |"
+              fi
+            done
+
+            # テーブル形式で生成
+            CONTENT="<div align=\"center\">\n\n"
+            CONTENT="${CONTENT}|"
+
+            # 1行目のバッジ
+            for i in $(seq 0 $((REPO_COUNT < 3 ? REPO_COUNT - 1 : 2))); do
+              CONTENT="${CONTENT} :---: |"
+            done
+            if [ $REPO_COUNT -gt 3 ]; then
+              for i in $(seq 3 $((REPO_COUNT - 1))); do
+                CONTENT="${CONTENT} :---: |"
+              done
+            fi
+            CONTENT="${CONTENT}\n"
+
+            # 1行目のバッジ
+            CONTENT="${CONTENT}| ${BADGE_ROW1}\n"
+            # 1行目のスター
+            CONTENT="${CONTENT}| ${STAR_ROW1}\n"
+
+            if [ $REPO_COUNT -gt 3 ]; then
+              # 2行目のバッジ
+              CONTENT="${CONTENT}| ${BADGE_ROW2}\n"
+              # 2行目のスター
+              CONTENT="${CONTENT}| ${STAR_ROW2}\n"
+            fi
+
+            CONTENT="${CONTENT}\n</div>"
+          fi
+
+          # README.md を更新
+          python3 -c "
+          import re
+          with open('README.md', 'r') as f:
+              content = f.read()
+          new_content = re.sub(
+              r'<!--START_SECTION:featured_projects-->.*?<!--END_SECTION:featured_projects-->',
+              '<!--START_SECTION:featured_projects-->\n${CONTENT}\n<!--END_SECTION:featured_projects-->',
+              content,
+              flags=re.DOTALL
+          )
+          with open('README.md', 'w') as f:
+              f.write(new_content)
+          "
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "🚀 Update featured projects"
+            git push
+          fi

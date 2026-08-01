@@ -80,8 +80,8 @@
 
 ### Implementation for User Story 3
 
-- [ ] T015 [P] [US3] .github/workflows/UpdateFeaturedProjects.yml にリポジトリ名のハイフンエスケープ処理を追加: `-` → `--` 変換ロジックを実装 — [#33](https://github.com/DMARU9/DMARU9/issues/33)
-- [ ] T016 [P] [US3] README.md の手動修正済みバッジ（もしあれば）のハイフンエスケープを確認・修正 — [#34](https://github.com/DMARU9/DMARU9/issues/34)
+- [x] T015 [P] [US3] .github/workflows/UpdateFeaturedProjects.yml にリポジトリ名のハイフンエスケープ処理を追加: `-` → `--` 変換ロジックを実装 — [#33](https://github.com/DMARU9/DMARU9/issues/33)
+- [x] T016 [P] [US3] README.md の手動修正済みバッジ（もしあれば）のハイフンエスケープを確認・修正 — [#34](https://github.com/DMARU9/DMARU9/issues/34)
 
 **Checkpoint**: ハイフン入りリポジトリ名のバッジが正しく表示される
 

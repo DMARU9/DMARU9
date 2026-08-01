@@ -29,19 +29,22 @@ curl -s -o /dev/null -w "%{http_code}" "https://github-readme-stats.vercel.app/a
 
 **確認したサービス**:
 
-| サービス                     | URL                                      | ステータス | 備考                       |
-| ---------------------------- | ---------------------------------------- | ---------- | -------------------------- |
-| github-readme-stats          | github-readme-stats.vercel.app           | 503        | 公式インスタンス（停止中） |
-| github-readme-streak-stats   | github-readme-streak-stats.herokuapp.com | 200        | Streak 統計（稼働中）      |
-| github-profile-summary-cards | github-profile-summary-cards.vercel.app  | 200        | Profile Summary（稼働中）  |
-| shields.io                   | img.shields.io                           | 200        | バッジ生成（稼働中）       |
+| サービス                       | URL                                      | ステータス | 備考                       |
+| ------------------------------ | ---------------------------------------- | ---------- | -------------------------- |
+| github-readme-stats (公式)     | github-readme-stats.vercel.app           | 503        | 公式インスタンス（停止中） |
+| github-readme-stats (フォーク) | github-readme-stats-ruby.vercel.app      | 200        | 稼働中の公開フォーク ✅    |
+| github-readme-streak-stats     | github-readme-streak-stats.herokuapp.com | 200        | Streak 統計（稼働中）      |
+| github-profile-summary-cards   | github-profile-summary-cards.vercel.app  | 200        | Profile Summary（稼働中）  |
+| shields.io                     | img.shields.io                           | 200        | バッジ生成（稼働中）       |
 
 **代替フォークの検索結果**:
 
-- GitHub で `github-readme-stats` を検索し、スター数の多いフォークを確認
-- `github-readme-stats-git-master.vercel.app` 等の公開インスタンスが存在する可能性
+- 複数の公開フォークインスタンスをテスト
+- `github-readme-stats-ruby.vercel.app` が api と top-langs の両エンドポイントで200 OKを確認
+- `github-readme-stats-git-master.vercel.app` は404（デプロイ未存在）
+- その他のフォーク（wheat, rosy, cyan, amber, bronze, frost, jade, topaz, indigo）も404
 
-**決定**: 稼働中の公開フォークインスタンスに差し替え
+**決定**: `github-readme-stats-ruby.vercel.app` に差し替え
 
 ### 3. Featured Projects のテーブル表示問題
 

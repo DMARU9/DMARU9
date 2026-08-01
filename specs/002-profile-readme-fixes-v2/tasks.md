@@ -28,9 +28,9 @@
 
 **⚠️ CRITICAL**: 代替サービスが稼働していることが全タスクの前提
 
-- [ ] T002 [P] `github-readme-stats` の公開フォークインスタンスが稼働していることを確認（HTTP 200 応答）。確認結果をresearch.mdに記録 — [#20](https://github.com/DMARU9/DMARU9/issues/20)
-- [ ] T003 [P] `github-readme-streak-stats.herokuapp.com` が稼働していることを確認（HTTP 200 応答） — [#21](https://github.com/DMARU9/DMARU9/issues/21)
-- [ ] T004 [P] `github-profile-summary-cards.vercel.app` が稼働していることを確認（HTTP 200 応答） — [#22](https://github.com/DMARU9/DMARU9/issues/22)
+- [x] T002 [P] `github-readme-stats` の公開フォークインスタンスが稼働していることを確認（HTTP 200 応答）。確認結果をresearch.mdに記録 — [#20](https://github.com/DMARU9/DMARU9/issues/20)
+- [x] T003 [P] `github-readme-streak-stats.herokuapp.com` が稼働していることを確認（HTTP 200 応答） — [#21](https://github.com/DMARU9/DMARU9/issues/21)
+- [x] T004 [P] `github-profile-summary-cards.vercel.app` が稼働していることを確認（HTTP 200 応答） — [#22](https://github.com/DMARU9/DMARU9/issues/22)
 
 **Checkpoint**: 全サービスが稼働中。ユーザーストーリー作業を開始可能
 

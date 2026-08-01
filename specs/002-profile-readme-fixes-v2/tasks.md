@@ -91,10 +91,10 @@
 
 **Purpose**: 全ストーリー完了後の最終検証とドキュメント更新
 
-- [ ] T017 quickstart.md の検証ガイドに従い、全ステップを実行して動作確認 — [#35](https://github.com/DMARU9/DMARU9/issues/35)
-- [ ] T018 [P] Agent Context を更新: `.github/copilot-instructions.md` の `<!-- SPECKIT START -->` 間の参照を新しい plan に更新（既に完了済みの場合はスキップ） — [#36](https://github.com/DMARU9/DMARU9/issues/36)
-- [ ] T019 全変更を Conventional Commits 形式でコミット（`fix: ...` または `docs: ...`） — [#37](https://github.com/DMARU9/DMARU9/issues/37)
-- [ ] T020 README.md を GitHub で表示し、全セクションが正しくレンダリングされることを最終確認 — [#38](https://github.com/DMARU9/DMARU9/issues/38)
+- [x] T017 quickstart.md の検証ガイドに従い、全ステップを実行して動作確認 — [#35](https://github.com/DMARU9/DMARU9/issues/35)
+- [x] T018 [P] Agent Context を更新: `.github/copilot-instructions.md` の `<!-- SPECKIT START -->` 間の参照を新しい plan に更新（既に完了済みの場合はスキップ） — [#36](https://github.com/DMARU9/DMARU9/issues/36)
+- [x] T019 全変更を Conventional Commits 形式でコミット（`fix: ...` または `docs: ...`） — [#37](https://github.com/DMARU9/DMARU9/issues/37)
+- [x] T020 README.md を GitHub で表示し、全セクションが正しくレンダリングされることを最終確認 — [#38](https://github.com/DMARU9/DMARU9/issues/38)
 
 ---
 

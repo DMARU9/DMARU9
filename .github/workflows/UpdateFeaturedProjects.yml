@@ -28,10 +28,10 @@ jobs:
           REPOS=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
             "https://api.github.com/users/DMARU9/repos?per_page=100&type=public")
 
-          # fork と archived を除外し、stars 順（同数なら更新日順）でソート
+          # fork と archived を除外し、stars 順でソート
           TOP_REPOS=$(echo "$REPOS" | jq -r '
             [.[] | select(.fork == false and .archived == false)] |
-            sort_by(-.stargazers_count, -.pushed_at) |
+            sort_by(-.stargazers_count) |
             .[0:6]
           ')
 

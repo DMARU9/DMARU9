@@ -28,80 +28,46 @@ jobs:
           REPOS=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
             "https://api.github.com/users/DMARU9/repos?per_page=100&type=public")
 
-          # fork と archived を除外し、stars 順でソート
+          # fork と archived を除外し、stars 順→更新日順でソート、最大4件に制限
           TOP_REPOS=$(echo "$REPOS" | jq -r '
             [.[] | select(.fork == false and .archived == false)] |
-            sort_by(-.stargazers_count) |
-            .[0:6]
+            sort_by(-.stargazers_count, -.pushed_at) |
+            .[0:4]
           ')
 
           # リポジトリ数を確認
           REPO_COUNT=$(echo "$TOP_REPOS" | jq 'length')
 
           if [ "$REPO_COUNT" = "0" ]; then
-            CONTENT="> 🏗️ No public projects yet. Stay tuned!"
+            CONTENT=""
           else
             # カラーサイクル
             COLORS=("#00C9FF" "#92FE9D" "#ff69b4")
 
-            # バッジ行とスターバッジ行を生成
-            BADGE_ROW1=""
-            STAR_ROW1=""
-            BADGE_ROW2=""
-            STAR_ROW2=""
+            # テーブルヘッダーを生成
+            CONTENT="<div align=\"center\">\n\n"
+            CONTENT="${CONTENT}| Project | Stars |\n"
+            CONTENT="${CONTENT}| :---: | :---: |\n"
 
             for i in $(seq 0 $((REPO_COUNT - 1))); do
               NAME=$(echo "$TOP_REPOS" | jq -r ".[$i].name")
-              DESC=$(echo "$TOP_REPOS" | jq -r ".[$i].description // \"No description\"")
               URL=$(echo "$TOP_REPOS" | jq -r ".[$i].html_url")
               STARS=$(echo "$TOP_REPOS" | jq -r ".[$i].stargazers_count")
               COLOR_IDX=$((i % 3))
               COLOR=${COLORS[$COLOR_IDX]}
 
-              # 説明文を切り詰め
-              SHORT_DESC=$(echo "$DESC" | cut -c1-30)
-              # URL エンコード
-              ENCODED_NAME=$(echo "$NAME" | sed 's/ /_/g')
-              ENCODED_DESC=$(echo "$SHORT_DESC" | sed 's/ /_/g; s/#/%23/g')
+              # リポジトリ名のハイフンを--でエスケープ（shields.ioルール）
+              ESCAPED_NAME=$(echo "$NAME" | sed 's/-/--/g')
 
-              BADGE="[![${NAME}](https://img.shields.io/badge/${ENCODED_NAME}-${ENCODED_DESC}-${COLOR}?style=for-the-badge&link=${URL})]"
-              STAR="⭐ ${STARS}"
+              # カラーの#を%23にエンコード
+              ENCODED_COLOR=$(echo "$COLOR" | sed 's/#/%23/g')
 
-              if [ $i -lt 3 ]; then
-                BADGE_ROW1="${BADGE_ROW1} ${BADGE} |"
-                STAR_ROW1="${STAR_ROW1} ${STAR} |"
-              else
-                BADGE_ROW2="${BADGE_ROW2} ${BADGE} |"
-                STAR_ROW2="${STAR_ROW2} ${STAR} |"
-              fi
+              # バッジURLを生成（link=パラメータなし、Markdownリンクで実装）
+              BADGE_URL="https://img.shields.io/badge/${ESCAPED_NAME}-${ENCODED_COLOR}?style=for-the-badge"
+
+              # 1行=1プロジェクトのテーブル行を追加
+              CONTENT="${CONTENT}| [![${NAME}](${BADGE_URL})](${URL}) | ⭐ ${STARS} |\n"
             done
-
-            # テーブル形式で生成
-            CONTENT="<div align=\"center\">\n\n"
-            CONTENT="${CONTENT}|"
-
-            # 1行目のバッジ
-            for i in $(seq 0 $((REPO_COUNT < 3 ? REPO_COUNT - 1 : 2))); do
-              CONTENT="${CONTENT} :---: |"
-            done
-            if [ $REPO_COUNT -gt 3 ]; then
-              for i in $(seq 3 $((REPO_COUNT - 1))); do
-                CONTENT="${CONTENT} :---: |"
-              done
-            fi
-            CONTENT="${CONTENT}\n"
-
-            # 1行目のバッジ
-            CONTENT="${CONTENT}| ${BADGE_ROW1}\n"
-            # 1行目のスター
-            CONTENT="${CONTENT}| ${STAR_ROW1}\n"
-
-            if [ $REPO_COUNT -gt 3 ]; then
-              # 2行目のバッジ
-              CONTENT="${CONTENT}| ${BADGE_ROW2}\n"
-              # 2行目のスター
-              CONTENT="${CONTENT}| ${STAR_ROW2}\n"
-            fi
 
             CONTENT="${CONTENT}\n</div>"
           fi

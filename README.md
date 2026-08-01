@@ -169,15 +169,7 @@ No activity data yet. Start coding to fill this section! 🚀
 ## 🚀 Featured Projects
 
 <!--START_SECTION:featured_projects-->
-<div align="center">
 
-| :---: | :---: | :---: | :---: |
-| [![DEV-LOG-DAILY](https://img.shields.io/badge/DEV-LOG-DAILY-開発者の日々の学びと-#00C9FF?style=for-the-badge&link=https://github.com/DMARU9/DEV-LOG-DAILY)] | [![DMARU9](https://img.shields.io/badge/DMARU9-No_description-#92FE9D?style=for-the-badge&link=https://github.com/DMARU9/DMARU9)] | [![DMARU9.github.io](https://img.shields.io/badge/DMARU9.github.io-No_description-#ff69b4?style=for-the-badge&link=https://github.com/DMARU9/DMARU9.github.io)] |
-| ⭐ 0 | ⭐ 0 | ⭐ 0 |
-| [![OBSIDIAN-KNOWLEDGE-COMPILER](https://img.shields.io/badge/OBSIDIAN-KNOWLEDGE-COMPILER-Obsidian_Wiki_を育てる_Kno-#00C9FF?style=for-the-badge&link=https://github.com/DMARU9/OBSIDIAN-KNOWLEDGE-COMPILER)] |
-| ⭐ 0 |
-
-</div>
 <!--END_SECTION:featured_projects-->
 
 ---

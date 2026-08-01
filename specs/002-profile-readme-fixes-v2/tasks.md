@@ -61,12 +61,12 @@
 
 ### Implementation for User Story 2
 
-- [ ] T009 [P] [US2] .github/workflows/UpdateFeaturedProjects.yml の jq スクリプトを更新: `sort_by(-.stargazers_count)` → `sort_by(-.stargazers_count, -.pushed_at)` に変更（更新日順のサブソート追加） — [#27](https://github.com/DMARU9/DMARU9/issues/27)
-- [ ] T010 [P] [US2] .github/workflows/UpdateFeaturedProjects.yml の jq スクリプトを更新: `.[0:6]` → `.[0:4]` に変更（最大表示数を4件に制限） — [#28](https://github.com/DMARU9/DMARU9/issues/28)
-- [ ] T011 [US2] .github/workflows/UpdateFeaturedProjects.yml のバッジ生成ロジックを全面改修: 説明文をバッジに含めない、`link=` パラメータを削除しMarkdownリンク記法で実装、1プロジェクト=1行のテーブル形式に変更 — [#29](https://github.com/DMARU9/DMARU9/issues/29)
-- [ ] T012 [US2] .github/workflows/UpdateFeaturedProjects.yml のテーブル構造を更新: header `| Project | Stars |`、alignment `| :---: | :---: |`、各行 `| [![NAME](badge-url)](repo-url) | ⭐ N |` — [#30](https://github.com/DMARU9/DMARU9/issues/30)
-- [ ] T013 [US2] .github/workflows/UpdateFeaturedProjects.yml の空リポジトリ対応を実装: `REPO_COUNT=0` の場合、セクション全体を非表示 — [#31](https://github.com/DMARU9/DMARU9/issues/31)
-- [ ] T014 [US2] README.md の Featured Projects セクションの現在の壊れたテーブルを削除（GitHub Actions が次回実行時に正しいテーブルを自動生成するため） — [#32](https://github.com/DMARU9/DMARU9/issues/32)
+- [x] T009 [P] [US2] .github/workflows/UpdateFeaturedProjects.yml の jq スクリプトを更新: `sort_by(-.stargazers_count)` → `sort_by(-.stargazers_count, -.pushed_at)` に変更（更新日順のサブソート追加） — [#27](https://github.com/DMARU9/DMARU9/issues/27)
+- [x] T010 [P] [US2] .github/workflows/UpdateFeaturedProjects.yml の jq スクリプトを更新: `.[0:6]` → `.[0:4]` に変更（最大表示数を4件に制限） — [#28](https://github.com/DMARU9/DMARU9/issues/28)
+- [x] T011 [US2] .github/workflows/UpdateFeaturedProjects.yml のバッジ生成ロジックを全面改修: 説明文をバッジに含めない、`link=` パラメータを削除しMarkdownリンク記法で実装、1プロジェクト=1行のテーブル形式に変更 — [#29](https://github.com/DMARU9/DMARU9/issues/29)
+- [x] T012 [US2] .github/workflows/UpdateFeaturedProjects.yml のテーブル構造を更新: header `| Project | Stars |`、alignment `| :---: | :---: |`、各行 `| [![NAME](badge-url)](repo-url) | ⭐ N |` — [#30](https://github.com/DMARU9/DMARU9/issues/30)
+- [x] T013 [US2] .github/workflows/UpdateFeaturedProjects.yml の空リポジトリ対応を実装: `REPO_COUNT=0` の場合、セクション全体を非表示 — [#31](https://github.com/DMARU9/DMARU9/issues/31)
+- [x] T014 [US2] README.md の Featured Projects セクションの現在の壊れたテーブルを削除（GitHub Actions が次回実行時に正しいテーブルを自動生成するため） — [#32](https://github.com/DMARU9/DMARU9/issues/32)
 
 **Checkpoint**: Featured Projects が正しいテーブル形式で表示され、バッジがクリック可能
 

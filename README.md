@@ -161,7 +161,7 @@ No activity data yet. Start coding to fill this section! 🚀
 
 <!--START_SECTION:activity-->
 
-1. 🎉 Merged PR [#17](https://github.com/DMARU9/DMARU9/pull/17) in [DMARU9/DMARU9](https://github.com/DMARU9/DMARU9)
+1. 🎉 Merged PR [#39](https://github.com/DMARU9/DMARU9/pull/39) in [DMARU9/DMARU9](https://github.com/DMARU9/DMARU9)
 <!--END_SECTION:activity-->
 
 ---

@@ -29,9 +29,10 @@ jobs:
             "https://api.github.com/users/DMARU9/repos?per_page=100&type=public")
 
           # fork と archived を除外し、stars 順→更新日順でソート、最大4件に制限
+          # pushed_at は文字列なので fromdate で数値に変換してから否定
           TOP_REPOS=$(echo "$REPOS" | jq -r '
             [.[] | select(.fork == false and .archived == false)] |
-            sort_by(-.stargazers_count, -.pushed_at) |
+            sort_by(-.stargazers_count, -(pushed_at | fromdate)) |
             .[0:4]
           ')
 

@@ -113,9 +113,9 @@ mindmap
 
 <div align="center">
 
-|                                                                                                       Stats                                                                                                       |                                                                                       Top Languages                                                                                       |                                                                                   Streak                                                                                   |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| ![Stats](https://github-readme-stats.vercel.app/api?username=DMARU9&show_icons=true&count_private=true&theme=transparent&hide_border=true&title_color=00C9FF&icon_color=92FE9D&text_color=c9d1d9&bg_color=0D1117) | ![Languages](https://github-readme-stats.vercel.app/api/top-langs?username=DMARU9&layout=compact&theme=transparent&hide_border=true&title_color=00C9FF&text_color=c9d1d9&bg_color=0D1117) | ![Streak](https://github-readme-streak-stats.herokuapp.com/?user=DMARU9&theme=transparent&hide_border=true&ring=00C9FF&fire=92FE9D&currStreakLabel=00C9FF&bg_color=0D1117) |
+|                                                                                                                                 Stats                                                                                                                                 |                                                                                                 Top Languages                                                                                                 |                                                                                            Streak                                                                                            |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| ![GitHub Stats for DMARU9: stars, commits, PRs, issues](https://github-readme-stats-ruby.vercel.app/api?username=DMARU9&show_icons=true&count_private=true&theme=transparent&hide_border=true&title_color=00C9FF&icon_color=92FE9D&text_color=c9d1d9&bg_color=0D1117) | ![Top Languages for DMARU9](https://github-readme-stats-ruby.vercel.app/api/top-langs?username=DMARU9&layout=compact&theme=transparent&hide_border=true&title_color=00C9FF&text_color=c9d1d9&bg_color=0D1117) | ![GitHub Streak for DMARU9](https://github-readme-streak-stats.herokuapp.com/?user=DMARU9&theme=transparent&hide_border=true&ring=00C9FF&fire=92FE9D&currStreakLabel=00C9FF&bg_color=0D1117) |
 
 </div>
 
@@ -123,11 +123,11 @@ mindmap
 
 <div align="center">
 
-![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=DMARU9&theme=github_dark)
+![GitHub Profile Details for DMARU9](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=DMARU9&theme=github_dark)
 
-|                                                                                                                     |                                                                                                                       |                                                                                                                              |
-| :-----------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------: |
-| ![](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=DMARU9&theme=github_dark) | ![](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=DMARU9&theme=github_dark) | ![](https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=DMARU9&theme=github_dark&utcOffset=9) |
+|                                                                                                                                                  |                                                                                                                                                      |                                                                                                                                                        |
+| :----------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------: |
+| ![Repos per Language for DMARU9](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=DMARU9&theme=github_dark) | ![Most Commit Language for DMARU9](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=DMARU9&theme=github_dark) | ![Productive Time for DMARU9](https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=DMARU9&theme=github_dark&utcOffset=9) |
 
 </div>
 
@@ -172,10 +172,10 @@ No activity data yet. Start coding to fill this section! 🚀
 <div align="center">
 
 | :---: | :---: | :---: | :---: |
-|  [![DEV-LOG-DAILY](https://img.shields.io/badge/DEV-LOG-DAILY-開発者の日々の学びと-#00C9FF?style=for-the-badge&link=https://github.com/DMARU9/DEV-LOG-DAILY)] | [![DMARU9](https://img.shields.io/badge/DMARU9-No_description-#92FE9D?style=for-the-badge&link=https://github.com/DMARU9/DMARU9)] | [![DMARU9.github.io](https://img.shields.io/badge/DMARU9.github.io-No_description-#ff69b4?style=for-the-badge&link=https://github.com/DMARU9/DMARU9.github.io)] |
-|  ⭐ 0 | ⭐ 0 | ⭐ 0 |
-|  [![OBSIDIAN-KNOWLEDGE-COMPILER](https://img.shields.io/badge/OBSIDIAN-KNOWLEDGE-COMPILER-Obsidian_Wiki_を育てる_Kno-#00C9FF?style=for-the-badge&link=https://github.com/DMARU9/OBSIDIAN-KNOWLEDGE-COMPILER)] |
-|  ⭐ 0 |
+| [![DEV-LOG-DAILY](https://img.shields.io/badge/DEV-LOG-DAILY-開発者の日々の学びと-#00C9FF?style=for-the-badge&link=https://github.com/DMARU9/DEV-LOG-DAILY)] | [![DMARU9](https://img.shields.io/badge/DMARU9-No_description-#92FE9D?style=for-the-badge&link=https://github.com/DMARU9/DMARU9)] | [![DMARU9.github.io](https://img.shields.io/badge/DMARU9.github.io-No_description-#ff69b4?style=for-the-badge&link=https://github.com/DMARU9/DMARU9.github.io)] |
+| ⭐ 0 | ⭐ 0 | ⭐ 0 |
+| [![OBSIDIAN-KNOWLEDGE-COMPILER](https://img.shields.io/badge/OBSIDIAN-KNOWLEDGE-COMPILER-Obsidian_Wiki_を育てる_Kno-#00C9FF?style=for-the-badge&link=https://github.com/DMARU9/OBSIDIAN-KNOWLEDGE-COMPILER)] |
+| ⭐ 0 |
 
 </div>
 <!--END_SECTION:featured_projects-->

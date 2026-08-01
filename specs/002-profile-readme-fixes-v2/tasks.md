@@ -44,10 +44,10 @@
 
 ### Implementation for User Story 1
 
-- [ ] T005 [US1] README.md の Stats カードURLを `github-readme-stats.vercel.app` → 稼働中の公開フォークインスタンスに差し替え。alt テキスト `![Stats]` → `![GitHub Stats for DMARU9: stars, commits, PRs, issues]` を追加 — [#23](https://github.com/DMARU9/DMARU9/issues/23)
-- [ ] T006 [US1] README.md の Top Languages カードURLを `github-readme-stats.vercel.app` → 稼働中の公開フォークインスタンスに差し替え。alt テキスト `![Languages]` → `![Top Languages for DMARU9]` を追加 — [#24](https://github.com/DMARU9/DMARU9/issues/24)
-- [ ] T007 [US1] Streak カードの alt テキストを `![Streak]` → `![GitHub Streak for DMARU9]` に更新（サービスは稼働中のためURL変更なし） — [#25](https://github.com/DMARU9/DMARU9/issues/25)
-- [ ] T008 [US1] Profile Summary カードの alt テキストを具体的な説明に更新（サービスは稼働中のためURL変更なし） — [#26](https://github.com/DMARU9/DMARU9/issues/26)
+- [x] T005 [US1] README.md の Stats カードURLを `github-readme-stats.vercel.app` → 稼働中の公開フォークインスタンスに差し替え。alt テキスト `![Stats]` → `![GitHub Stats for DMARU9: stars, commits, PRs, issues]` を追加 — [#23](https://github.com/DMARU9/DMARU9/issues/23)
+- [x] T006 [US1] README.md の Top Languages カードURLを `github-readme-stats.vercel.app` → 稼働中の公開フォークインスタンスに差し替え。alt テキスト `![Languages]` → `![Top Languages for DMARU9]` を追加 — [#24](https://github.com/DMARU9/DMARU9/issues/24)
+- [x] T007 [US1] Streak カードの alt テキストを `![Streak]` → `![GitHub Streak for DMARU9]` に更新（サービスは稼働中のためURL変更なし） — [#25](https://github.com/DMARU9/DMARU9/issues/25)
+- [x] T008 [US1] Profile Summary カードの alt テキストを具体的な説明に更新（サービスは稼働中のためURL変更なし） — [#26](https://github.com/DMARU9/DMARU9/issues/26)
 
 **Checkpoint**: GitHub Analytics セクションの全画像が正常に表示される
 

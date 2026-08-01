@@ -136,11 +136,7 @@ mindmap
 ## 🏆 GitHub Achievements
 
 <!--START_SECTION:achievements-->
-<div align="center">
-
 > ℹ️ No achievements data available.
-
-</div>
 <!--END_SECTION:achievements-->
 
 ---

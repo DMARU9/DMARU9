@@ -32,7 +32,7 @@ jobs:
           # pushed_at は文字列なので fromdate で数値に変換してから否定
           TOP_REPOS=$(echo "$REPOS" | jq -r '
             [.[] | select(.fork == false and .archived == false)] |
-            sort_by(-.stargazers_count, -(pushed_at | fromdate)) |
+            sort_by(-.stargazers_count, -(if .pushed_at then (.pushed_at | fromdate) else 0 end)) |
             .[0:4]
           ')
 

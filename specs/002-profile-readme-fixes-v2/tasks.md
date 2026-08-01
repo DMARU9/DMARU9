@@ -18,7 +18,7 @@
 
 **Purpose**: ブランチ作成と前提確認
 
-- [ ] T001 既存の README.md と .github/workflows/UpdateFeaturedProjects.yml の現在の状態をバックアップ確認
+- [x] T001 既存の README.md と .github/workflows/UpdateFeaturedProjects.yml の現在の状態をバックアップ確認 — [#19](https://github.com/DMARU9/DMARU9/issues/19)
 
 ---
 
@@ -28,9 +28,9 @@
 
 **⚠️ CRITICAL**: 代替サービスが稼働していることが全タスクの前提
 
-- [ ] T002 [P] `github-readme-stats` の公開フォークインスタンスが稼働していることを確認（HTTP 200 応答）。確認結果をresearch.mdに記録
-- [ ] T003 [P] `github-readme-streak-stats.herokuapp.com` が稼働していることを確認（HTTP 200 応答）
-- [ ] T004 [P] `github-profile-summary-cards.vercel.app` が稼働していることを確認（HTTP 200 応答）
+- [ ] T002 [P] `github-readme-stats` の公開フォークインスタンスが稼働していることを確認（HTTP 200 応答）。確認結果をresearch.mdに記録 — [#20](https://github.com/DMARU9/DMARU9/issues/20)
+- [ ] T003 [P] `github-readme-streak-stats.herokuapp.com` が稼働していることを確認（HTTP 200 応答） — [#21](https://github.com/DMARU9/DMARU9/issues/21)
+- [ ] T004 [P] `github-profile-summary-cards.vercel.app` が稼働していることを確認（HTTP 200 応答） — [#22](https://github.com/DMARU9/DMARU9/issues/22)
 
 **Checkpoint**: 全サービスが稼働中。ユーザーストーリー作業を開始可能
 
@@ -44,10 +44,10 @@
 
 ### Implementation for User Story 1
 
-- [ ] T005 [US1] README.md の Stats カードURLを `github-readme-stats.vercel.app` → 稼働中の公開フォークインスタンスに差し替え。alt テキスト `![Stats]` → `![GitHub Stats for DMARU9: stars, commits, PRs, issues]` を追加
-- [ ] T006 [US1] README.md の Top Languages カードURLを `github-readme-stats.vercel.app` → 稼働中の公開フォークインスタンスに差し替え。alt テキスト `![Languages]` → `![Top Languages for DMARU9]` を追加
-- [ ] T007 [US1] Streak カードの alt テキストを `![Streak]` → `![GitHub Streak for DMARU9]` に更新（サービスは稼働中のためURL変更なし）
-- [ ] T008 [US1] Profile Summary カードの alt テキストを具体的な説明に更新（サービスは稼働中のためURL変更なし）
+- [ ] T005 [US1] README.md の Stats カードURLを `github-readme-stats.vercel.app` → 稼働中の公開フォークインスタンスに差し替え。alt テキスト `![Stats]` → `![GitHub Stats for DMARU9: stars, commits, PRs, issues]` を追加 — [#23](https://github.com/DMARU9/DMARU9/issues/23)
+- [ ] T006 [US1] README.md の Top Languages カードURLを `github-readme-stats.vercel.app` → 稼働中の公開フォークインスタンスに差し替え。alt テキスト `![Languages]` → `![Top Languages for DMARU9]` を追加 — [#24](https://github.com/DMARU9/DMARU9/issues/24)
+- [ ] T007 [US1] Streak カードの alt テキストを `![Streak]` → `![GitHub Streak for DMARU9]` に更新（サービスは稼働中のためURL変更なし） — [#25](https://github.com/DMARU9/DMARU9/issues/25)
+- [ ] T008 [US1] Profile Summary カードの alt テキストを具体的な説明に更新（サービスは稼働中のためURL変更なし） — [#26](https://github.com/DMARU9/DMARU9/issues/26)
 
 **Checkpoint**: GitHub Analytics セクションの全画像が正常に表示される
 
@@ -61,12 +61,12 @@
 
 ### Implementation for User Story 2
 
-- [ ] T009 [P] [US2] .github/workflows/UpdateFeaturedProjects.yml の jq スクリプトを更新: `sort_by(-.stargazers_count)` → `sort_by(-.stargazers_count, -.pushed_at)` に変更（更新日順のサブソート追加）
-- [ ] T010 [P] [US2] .github/workflows/UpdateFeaturedProjects.yml の jq スクリプトを更新: `.[0:6]` → `.[0:4]` に変更（最大表示数を4件に制限）
-- [ ] T011 [US2] .github/workflows/UpdateFeaturedProjects.yml のバッジ生成ロジックを全面改修: 説明文をバッジに含めない、`link=` パラメータを削除しMarkdownリンク記法で実装、1プロジェクト=1行のテーブル形式に変更
-- [ ] T012 [US2] .github/workflows/UpdateFeaturedProjects.yml のテーブル構造を更新: header `| Project | Stars |`、alignment `| :---: | :---: |`、各行 `| [![NAME](badge-url)](repo-url) | ⭐ N |`
-- [ ] T013 [US2] .github/workflows/UpdateFeaturedProjects.yml の空リポジトリ対応を実装: `REPO_COUNT=0` の場合、セクション全体を非表示
-- [ ] T014 [US2] README.md の Featured Projects セクションの現在の壊れたテーブルを削除（GitHub Actions が次回実行時に正しいテーブルを自動生成するため）
+- [ ] T009 [P] [US2] .github/workflows/UpdateFeaturedProjects.yml の jq スクリプトを更新: `sort_by(-.stargazers_count)` → `sort_by(-.stargazers_count, -.pushed_at)` に変更（更新日順のサブソート追加） — [#27](https://github.com/DMARU9/DMARU9/issues/27)
+- [ ] T010 [P] [US2] .github/workflows/UpdateFeaturedProjects.yml の jq スクリプトを更新: `.[0:6]` → `.[0:4]` に変更（最大表示数を4件に制限） — [#28](https://github.com/DMARU9/DMARU9/issues/28)
+- [ ] T011 [US2] .github/workflows/UpdateFeaturedProjects.yml のバッジ生成ロジックを全面改修: 説明文をバッジに含めない、`link=` パラメータを削除しMarkdownリンク記法で実装、1プロジェクト=1行のテーブル形式に変更 — [#29](https://github.com/DMARU9/DMARU9/issues/29)
+- [ ] T012 [US2] .github/workflows/UpdateFeaturedProjects.yml のテーブル構造を更新: header `| Project | Stars |`、alignment `| :---: | :---: |`、各行 `| [![NAME](badge-url)](repo-url) | ⭐ N |` — [#30](https://github.com/DMARU9/DMARU9/issues/30)
+- [ ] T013 [US2] .github/workflows/UpdateFeaturedProjects.yml の空リポジトリ対応を実装: `REPO_COUNT=0` の場合、セクション全体を非表示 — [#31](https://github.com/DMARU9/DMARU9/issues/31)
+- [ ] T014 [US2] README.md の Featured Projects セクションの現在の壊れたテーブルを削除（GitHub Actions が次回実行時に正しいテーブルを自動生成するため） — [#32](https://github.com/DMARU9/DMARU9/issues/32)
 
 **Checkpoint**: Featured Projects が正しいテーブル形式で表示され、バッジがクリック可能
 
@@ -80,8 +80,8 @@
 
 ### Implementation for User Story 3
 
-- [ ] T015 [P] [US3] .github/workflows/UpdateFeaturedProjects.yml にリポジトリ名のハイフンエスケープ処理を追加: `-` → `--` 変換ロジックを実装
-- [ ] T016 [P] [US3] README.md の手動修正済みバッジ（もしあれば）のハイフンエスケープを確認・修正
+- [ ] T015 [P] [US3] .github/workflows/UpdateFeaturedProjects.yml にリポジトリ名のハイフンエスケープ処理を追加: `-` → `--` 変換ロジックを実装 — [#33](https://github.com/DMARU9/DMARU9/issues/33)
+- [ ] T016 [P] [US3] README.md の手動修正済みバッジ（もしあれば）のハイフンエスケープを確認・修正 — [#34](https://github.com/DMARU9/DMARU9/issues/34)
 
 **Checkpoint**: ハイフン入りリポジトリ名のバッジが正しく表示される
 
@@ -91,10 +91,10 @@
 
 **Purpose**: 全ストーリー完了後の最終検証とドキュメント更新
 
-- [ ] T017 quickstart.md の検証ガイドに従い、全ステップを実行して動作確認
-- [ ] T018 [P] Agent Context を更新: `.github/copilot-instructions.md` の `<!-- SPECKIT START -->` 間の参照を新しい plan に更新（既に完了済みの場合はスキップ）
-- [ ] T019 全変更を Conventional Commits 形式でコミット（`fix: ...` または `docs: ...`）
-- [ ] T020 README.md を GitHub で表示し、全セクションが正しくレンダリングされることを最終確認
+- [ ] T017 quickstart.md の検証ガイドに従い、全ステップを実行して動作確認 — [#35](https://github.com/DMARU9/DMARU9/issues/35)
+- [ ] T018 [P] Agent Context を更新: `.github/copilot-instructions.md` の `<!-- SPECKIT START -->` 間の参照を新しい plan に更新（既に完了済みの場合はスキップ） — [#36](https://github.com/DMARU9/DMARU9/issues/36)
+- [ ] T019 全変更を Conventional Commits 形式でコミット（`fix: ...` または `docs: ...`） — [#37](https://github.com/DMARU9/DMARU9/issues/37)
+- [ ] T020 README.md を GitHub で表示し、全セクションが正しくレンダリングされることを最終確認 — [#38](https://github.com/DMARU9/DMARU9/issues/38)
 
 ---
 

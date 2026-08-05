@@ -169,9 +169,9 @@ No activity data yet. Start coding to fill this section! 🚀
 
 | Project | Stars |
 | :---: | :---: |
-| [![BLOG-TOOLS](https://img.shields.io/badge/BLOG--TOOLS-%2300C9FF?style=for-the-badge)](https://github.com/DMARU9/BLOG-TOOLS) | ⭐ 0 |
-| [![DMARU9.github.io](https://img.shields.io/badge/DMARU9.github.io-%2392FE9D?style=for-the-badge)](https://github.com/DMARU9/DMARU9.github.io) | ⭐ 0 |
-| [![DMARU9](https://img.shields.io/badge/DMARU9-%23ff69b4?style=for-the-badge)](https://github.com/DMARU9/DMARU9) | ⭐ 0 |
+| [![DMARU9](https://img.shields.io/badge/DMARU9-%2300C9FF?style=for-the-badge)](https://github.com/DMARU9/DMARU9) | ⭐ 0 |
+| [![BLOG-TOOLS](https://img.shields.io/badge/BLOG--TOOLS-%2392FE9D?style=for-the-badge)](https://github.com/DMARU9/BLOG-TOOLS) | ⭐ 0 |
+| [![DMARU9.github.io](https://img.shields.io/badge/DMARU9.github.io-%23ff69b4?style=for-the-badge)](https://github.com/DMARU9/DMARU9.github.io) | ⭐ 0 |
 | [![DEV-LOG-DAILY](https://img.shields.io/badge/DEV--LOG--DAILY-%2300C9FF?style=for-the-badge)](https://github.com/DMARU9/DEV-LOG-DAILY) | ⭐ 0 |
 
 </div>

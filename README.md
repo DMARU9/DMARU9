@@ -157,7 +157,7 @@ No activity data yet. Start coding to fill this section! 🚀
 
 <!--START_SECTION:activity-->
 
-1. 🗣 Commented on [#42](https://github.com/DMARU9/BLOG-TOOLS/issues/42#issuecomment-5357086697) in [DMARU9/BLOG-TOOLS](https://github.com/DMARU9/BLOG-TOOLS)
+1. 🎉 Merged PR [#47](https://github.com/DMARU9/BLOG-TOOLS/pull/47) in [DMARU9/BLOG-TOOLS](https://github.com/DMARU9/BLOG-TOOLS)
 <!--END_SECTION:activity-->
 
 ---

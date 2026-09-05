@@ -169,8 +169,8 @@ No activity data yet. Start coding to fill this section! 🚀
 
 | Project | Stars |
 | :---: | :---: |
-| [![copilot-plugins-marketplace](https://img.shields.io/badge/copilot--plugins--marketplace-%2300C9FF?style=for-the-badge)](https://github.com/DMARU9/copilot-plugins-marketplace) | ⭐ 0 |
-| [![DMARU9](https://img.shields.io/badge/DMARU9-%2392FE9D?style=for-the-badge)](https://github.com/DMARU9/DMARU9) | ⭐ 0 |
+| [![DMARU9](https://img.shields.io/badge/DMARU9-%2300C9FF?style=for-the-badge)](https://github.com/DMARU9/DMARU9) | ⭐ 0 |
+| [![copilot-plugins-marketplace](https://img.shields.io/badge/copilot--plugins--marketplace-%2392FE9D?style=for-the-badge)](https://github.com/DMARU9/copilot-plugins-marketplace) | ⭐ 0 |
 | [![BLOG-TOOLS](https://img.shields.io/badge/BLOG--TOOLS-%23ff69b4?style=for-the-badge)](https://github.com/DMARU9/BLOG-TOOLS) | ⭐ 0 |
 | [![DMARU9.github.io](https://img.shields.io/badge/DMARU9.github.io-%2300C9FF?style=for-the-badge)](https://github.com/DMARU9/DMARU9.github.io) | ⭐ 0 |
 

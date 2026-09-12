@@ -157,7 +157,7 @@ No activity data yet. Start coding to fill this section! 🚀
 
 <!--START_SECTION:activity-->
 
-1. 🗣 Commented on [#25](https://github.com/DMARU9/trend-researcher/issues/25#issuecomment-5645262620) in [DMARU9/trend-researcher](https://github.com/DMARU9/trend-researcher)
+1. 🗣 Commented on [#47](https://github.com/DMARU9/trend-researcher/issues/47#issuecomment-5646676170) in [DMARU9/trend-researcher](https://github.com/DMARU9/trend-researcher)
 <!--END_SECTION:activity-->
 
 ---

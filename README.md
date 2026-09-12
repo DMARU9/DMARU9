@@ -157,7 +157,7 @@ No activity data yet. Start coding to fill this section! 🚀
 
 <!--START_SECTION:activity-->
 
-1. 🎉 Merged PR [#48](https://github.com/DMARU9/BLOG-TOOLS/pull/48) in [DMARU9/BLOG-TOOLS](https://github.com/DMARU9/BLOG-TOOLS)
+1. 🗣 Commented on [#25](https://github.com/DMARU9/copilot-plugins-marketplace/issues/25#issuecomment-5643187025) in [DMARU9/copilot-plugins-marketplace](https://github.com/DMARU9/copilot-plugins-marketplace)
 <!--END_SECTION:activity-->
 
 ---

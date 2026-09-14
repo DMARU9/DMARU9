@@ -157,7 +157,7 @@ No activity data yet. Start coding to fill this section! 🚀
 
 <!--START_SECTION:activity-->
 
-1. 🎉 Merged PR [#126](https://github.com/DMARU9/trend-researcher/pull/126) in [DMARU9/trend-researcher](https://github.com/DMARU9/trend-researcher)
+1. 🗣 Commented on [#161](https://github.com/DMARU9/trend-researcher/issues/161#issuecomment-5662443852) in [DMARU9/trend-researcher](https://github.com/DMARU9/trend-researcher)
 <!--END_SECTION:activity-->
 
 ---
